@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('tb_books', function (Blueprint $table) {
             $table->increments('book_id');
-            $table->string('book_title');
-            $table->string('type');
+            $table->string('cover_image')->nullable();
+            $table->string('book_title',255);
+            $table->string('type',100);
             $table->text('description')->nullable();
-            $table->boolean('is_active')->default(false);
+            $table->boolean('is_active')->default(false)->index();
             $table->timestamps();
         });
     }

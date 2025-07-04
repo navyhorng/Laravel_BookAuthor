@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('tb_authors', function (Blueprint $table) {
             $table->smallIncrements('author_id');
-            $table->string('author_name');
-            $table->unsignedSmallInteger('total_book')->default(0);
+            $table->string('author_name',100);
+            $table->boolean('total_book')->default(false)->index();
             $table->boolean('is_active')->default(false);
             $table->timestamps();
         });

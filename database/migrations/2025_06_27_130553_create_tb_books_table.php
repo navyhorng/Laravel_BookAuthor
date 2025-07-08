@@ -17,7 +17,9 @@ return new class extends Migration
             $table->string('book_title',255);
             $table->string('type',100);
             $table->text('description')->nullable();
-            $table->boolean('is_active')->default(false)->index();
+            $table->boolean('is_active')->default(true)->index();
+            // $table->unsignedSmallInteger('author_id');
+            // $table->foreign('author_id')->references('author_id')->on('tb_authors')->onDelete('cascade');
             $table->timestamps();
         });
     }

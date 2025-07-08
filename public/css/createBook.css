@@ -1,0 +1,113 @@
+.book-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .book-form h2 {
+    color: #ff237b;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .book-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+
+  .select_type {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .book-form input,
+  .book-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .submit-btn {
+    background-color: #e392b2;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .submit-btn:hover {
+    background-color: #f06292;
+    color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      padding: 20px;
+    }
+
+    .book-form {
+      padding: 15px;
+    }
+
+    .book-form h2 {
+      margin-left: 0;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .submit-btn {
+      font-size: 16px;
+    }
+  }
+  .btn-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-row .submit-btn,
+.btn-row .back-btn {
+  width: 50%;
+}
+
+.back-btn {
+    background-color: #e392b2;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: #f06292;
+  color: white;
+}

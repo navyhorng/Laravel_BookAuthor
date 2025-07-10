@@ -66,7 +66,7 @@ A simple Laravel web application to manage books and their authors. Features inc
 
 ![BookList](screenshots/BookList.png)
 ![AuthorList](screenshots/AuthorList.png)
-![BookDetail](screenshots/BookDetail.png)
+![BookDetail](screenshots/BookDetails.png)
 
 ## 🧑‍💻 Author
 

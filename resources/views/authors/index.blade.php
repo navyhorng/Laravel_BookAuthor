@@ -21,6 +21,7 @@
                         <td class="py-4 px-4">{{ $author->email }}</td>
                         <td class="py-4 px-4">{{ $author->total_book }}</td>
                         <td class="py-4 px-4">
+                            
                             <a href="{{ route('authors.edit', $author->author_id) }}" class="btn btn-sm inline-flex items-center justify-content-center" title="Edit">
                                 <i class="fas fa-pencil-alt"></i>
                             </a>

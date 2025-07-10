@@ -1,8 +1,6 @@
  <div class="header container-fluid">
   <div class="top-row container-fluid p-4">
-    {{-- <h2>Books Page</h2> --}}
     <div class="title">
-            {{-- Conditional rendering based on the $pageType variable --}}
             @if (isset($pageType) && $pageType === 'books')
                 <h2><b>Book List</b></h2>
             @elseif (isset($pageType) && $pageType === 'authors')
@@ -10,9 +8,9 @@
             @elseif (isset($pageType) && $pageType === 'users')
                 <h2><b>User</b></h2>
             @elseif (isset($pageType) && $pageType === 'settings')
-                <h2><b>Setting</b></h2> 
+                <h2><b>Setting</b></h2>
             @else 
-                <h2>Nothing</h2>
+                <h2>Book List</h2>
             @endif
         </div>
     <div class="profile">

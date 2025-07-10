@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-
 <div class="container-fluid p-4">
     <table class="w-100 border-1">
         <thead>
@@ -28,8 +27,11 @@
                     </td>
                     <td class="py-4 px-4">{{ $book->book_title }}</td>
                     <td class="py-4 px-4">{{ $book->type }}</td>
-                    <td class="book-author">{{ $book->author->author_name ?? 'Unknown' }}</td>
-                    <td class="py-4 px-4">
+                    <td class="py-4 px-4 book-author">{{ $book->author->author_name ?? 'Unknown' }}</td>
+                    <td class="py-4 px-4 fs-2">
+                        <a href="{{ route('books.show', $book->book_id) }}" class="btn btn-sm inline-flex items-center justify-content-center" title="BookDetail">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                            </a>
                         <a href="{{ route('books.edit', $book->book_id) }}" class="btn btn-sm inline-flex items-center justify-content-center" title="Edit">
                             <i class="fas fa-pencil-alt"></i>
                         </a>

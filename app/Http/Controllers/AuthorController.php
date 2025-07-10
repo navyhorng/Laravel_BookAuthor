@@ -18,7 +18,6 @@ class AuthorController extends Controller
         // $authors = Author::all()->where('is_active',true);
         return view('authors.create');
     }
-   
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -43,9 +42,10 @@ class AuthorController extends Controller
             'author_name' => 'required|string|max:100',
             'gender' => 'required|string|max:10',
             'email' => 'required|email|max:150|unique:tb_authors,email,' . $author->author_id . ',author_id',
-             'total_book' => 'nullable|integer|min:0',
+            'total_book' => 'nullable|integer|min:0',
             'is_active' => 'boolean'
         ]);
+        
         $author->update($validated);
         return redirect()->route('authors.index')
                         ->with('success', 'Author update successfully.');

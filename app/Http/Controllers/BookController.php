@@ -19,6 +19,12 @@ class BookController extends Controller
     {
         return view('books.create');
     }
+
+    public function show(Book $book){
+        // $book->load('bookDetails.author');
+        return view('books.show', compact('book'));
+    }
+
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -31,7 +37,7 @@ class BookController extends Controller
 
         if ($request->hasFile('cover_image')) {
             $file = $request->file('cover_image');
-            $filename = time() . '_' . $file->getClientOriginalName();
+            $filename = $file->getClientOriginalName();
             $file->storeAs('public/book', $filename);
             $validated['cover_image'] = 'book/' . $filename;
         }
@@ -58,7 +64,7 @@ class BookController extends Controller
 
         if ($request->hasFile('cover_image')) {
             $file = $request->file('cover_image');
-            $filename = time() . '_' . $file->getClientOriginalName();
+            $filename =$file->getClientOriginalName();
             $file->storeAs('public/book', $filename);
             $validated['cover_image'] = 'book/' . $filename;
         }

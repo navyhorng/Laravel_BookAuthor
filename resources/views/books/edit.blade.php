@@ -25,9 +25,6 @@
         <label for="description">Description:</label>
         <textarea id="description" name="description" rows="4" placeholder="Write a brief description...">{{ $book->description }}</textarea><br>
 
-    <!-- <button class="submit-btn" type="submit">Submit</button>
-     <a href="/navbra.html" class="back-btn">Back To Book Pag</a> -->
-
         <div class="btn-row">
             <button class="submit-btn btn" type="submit">Update</button>
             <a href="{{ route('books.index') }}" class="back-btn btn">Back</a>

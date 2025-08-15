@@ -71,4 +71,4 @@ A simple Laravel web application to manage books and their authors. Features inc
 ## 🧑‍💻 Author
 
 ** Horng Navy **
-🔗 [GitHub Profile](https://github.com/navyhorng)
+ [GitHub Profile]([https://github.com/horngnavy](https://github.com/navyhorng))
